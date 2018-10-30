@@ -1,0 +1,4 @@
+/home/meow/working/CW/CMakeFiles/rebuild_cache.dir
+/home/meow/working/CW/CMakeFiles/edit_cache.dir
+/home/meow/working/CW/CMakeFiles/interface.dir
+/home/meow/working/CW/CMakeFiles/DisplayImage.dir

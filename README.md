@@ -1,1 +1,1 @@
-CW
+CourseWork
