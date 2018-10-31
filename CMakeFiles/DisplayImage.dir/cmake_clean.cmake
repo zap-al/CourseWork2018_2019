@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o"
   "CMakeFiles/DisplayImage.dir/realize.cpp.o"
-  "/home/meow/working/DisplayImage.pdb"
-  "/home/meow/working/DisplayImage"
+  "DisplayImage.pdb"
+  "DisplayImage"
 )
 
 # Per-language clean rules from dependency scanning.

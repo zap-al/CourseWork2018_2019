@@ -10,8 +10,6 @@ SET(SOURCE realize.cpp)
 
 add_library(interface STATIC realize.cpp)
 
-SET(EXECUTABLE_OUTPUT_PATH ../)
-
 add_executable( DisplayImage DisplayImage.cpp realize.cpp )
 
 target_link_libraries( DisplayImage ${OpenCV_LIBS})
