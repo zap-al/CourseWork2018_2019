@@ -28,6 +28,7 @@ void findFocus(char*argv){
             mask[i][j] = i*j;
         }
     }
+    int i = 0;
 
     pictureOfCross = imread(argv);
 
