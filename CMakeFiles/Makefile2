@@ -59,56 +59,21 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/meow/working/CW
+CMAKE_SOURCE_DIR = /home/meow/working/CourseWork2018_2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/meow/working/CW
-
-#=============================================================================
-# Target rules for target CMakeFiles/interface.dir
-
-# All Build rule for target.
-CMakeFiles/interface.dir/all:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/depend
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CW/CMakeFiles --progress-num=4,5 "Built target interface"
-.PHONY : CMakeFiles/interface.dir/all
-
-# Include target in all.
-all: CMakeFiles/interface.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/interface.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/interface.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles 0
-.PHONY : CMakeFiles/interface.dir/rule
-
-# Convenience name for target.
-interface: CMakeFiles/interface.dir/rule
-
-.PHONY : interface
-
-# clean rule for target.
-CMakeFiles/interface.dir/clean:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/clean
-.PHONY : CMakeFiles/interface.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/interface.dir/clean
-
-.PHONY : clean
+CMAKE_BINARY_DIR = /home/meow/working/CourseWork2018_2019
 
 #=============================================================================
 # Target rules for target CMakeFiles/DisplayImage.dir
 
 # All Build rule for target.
-CMakeFiles/DisplayImage.dir/all: CMakeFiles/interface.dir/all
+CMakeFiles/DisplayImage.dir/all: CMakeFiles/ImgManipInterface.dir/all
+CMakeFiles/DisplayImage.dir/all: CMakeFiles/CrossFindingInterface.dir/all
+CMakeFiles/DisplayImage.dir/all: CMakeFiles/FocusFindingInterface.dir/all
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/depend
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CW/CMakeFiles --progress-num=1,2,3 "Built target DisplayImage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=3,4,5,6,7 "Built target DisplayImage"
 .PHONY : CMakeFiles/DisplayImage.dir/all
 
 # Include target in all.
@@ -118,9 +83,9 @@ all: CMakeFiles/DisplayImage.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DisplayImage.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/DisplayImage.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 0
 .PHONY : CMakeFiles/DisplayImage.dir/rule
 
 # Convenience name for target.
@@ -135,6 +100,117 @@ CMakeFiles/DisplayImage.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/DisplayImage.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ImgManipInterface.dir
+
+# All Build rule for target.
+CMakeFiles/ImgManipInterface.dir/all:
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/depend
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=10,11 "Built target ImgManipInterface"
+.PHONY : CMakeFiles/ImgManipInterface.dir/all
+
+# Include target in all.
+all: CMakeFiles/ImgManipInterface.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ImgManipInterface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ImgManipInterface.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 0
+.PHONY : CMakeFiles/ImgManipInterface.dir/rule
+
+# Convenience name for target.
+ImgManipInterface: CMakeFiles/ImgManipInterface.dir/rule
+
+.PHONY : ImgManipInterface
+
+# clean rule for target.
+CMakeFiles/ImgManipInterface.dir/clean:
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/clean
+.PHONY : CMakeFiles/ImgManipInterface.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/ImgManipInterface.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/CrossFindingInterface.dir
+
+# All Build rule for target.
+CMakeFiles/CrossFindingInterface.dir/all:
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/depend
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=1,2 "Built target CrossFindingInterface"
+.PHONY : CMakeFiles/CrossFindingInterface.dir/all
+
+# Include target in all.
+all: CMakeFiles/CrossFindingInterface.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/CrossFindingInterface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/CrossFindingInterface.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 0
+.PHONY : CMakeFiles/CrossFindingInterface.dir/rule
+
+# Convenience name for target.
+CrossFindingInterface: CMakeFiles/CrossFindingInterface.dir/rule
+
+.PHONY : CrossFindingInterface
+
+# clean rule for target.
+CMakeFiles/CrossFindingInterface.dir/clean:
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/clean
+.PHONY : CMakeFiles/CrossFindingInterface.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/CrossFindingInterface.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/FocusFindingInterface.dir
+
+# All Build rule for target.
+CMakeFiles/FocusFindingInterface.dir/all:
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/depend
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=8,9 "Built target FocusFindingInterface"
+.PHONY : CMakeFiles/FocusFindingInterface.dir/all
+
+# Include target in all.
+all: CMakeFiles/FocusFindingInterface.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/FocusFindingInterface.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FocusFindingInterface.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 0
+.PHONY : CMakeFiles/FocusFindingInterface.dir/rule
+
+# Convenience name for target.
+FocusFindingInterface: CMakeFiles/FocusFindingInterface.dir/rule
+
+.PHONY : FocusFindingInterface
+
+# clean rule for target.
+CMakeFiles/FocusFindingInterface.dir/clean:
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/clean
+.PHONY : CMakeFiles/FocusFindingInterface.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/FocusFindingInterface.dir/clean
 
 .PHONY : clean
 

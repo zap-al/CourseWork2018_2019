@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/meow/working/CW
+CMAKE_SOURCE_DIR = /home/meow/working/CourseWork2018_2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/meow/working/CW
+CMAKE_BINARY_DIR = /home/meow/working/CourseWork2018_2019
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles /home/meow/working/CW/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles /home/meow/working/CourseWork2018_2019/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CW/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/meow/working/CourseWork2018_2019/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named interface
-
-# Build rule for target.
-interface: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 interface
-.PHONY : interface
-
-# fast build rule for target.
-interface/fast:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/build
-.PHONY : interface/fast
-
-#=============================================================================
 # Target rules for targets named DisplayImage
 
 # Build rule for target.
@@ -136,62 +123,161 @@ DisplayImage/fast:
 	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/build
 .PHONY : DisplayImage/fast
 
-DisplayImage.o: DisplayImage.cpp.o
+#=============================================================================
+# Target rules for targets named ImgManipInterface
 
-.PHONY : DisplayImage.o
+# Build rule for target.
+ImgManipInterface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ImgManipInterface
+.PHONY : ImgManipInterface
+
+# fast build rule for target.
+ImgManipInterface/fast:
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/build
+.PHONY : ImgManipInterface/fast
+
+#=============================================================================
+# Target rules for targets named CrossFindingInterface
+
+# Build rule for target.
+CrossFindingInterface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CrossFindingInterface
+.PHONY : CrossFindingInterface
+
+# fast build rule for target.
+CrossFindingInterface/fast:
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/build
+.PHONY : CrossFindingInterface/fast
+
+#=============================================================================
+# Target rules for targets named FocusFindingInterface
+
+# Build rule for target.
+FocusFindingInterface: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 FocusFindingInterface
+.PHONY : FocusFindingInterface
+
+# fast build rule for target.
+FocusFindingInterface/fast:
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/build
+.PHONY : FocusFindingInterface/fast
+
+CrossFindingRealize.o: CrossFindingRealize.cpp.o
+
+.PHONY : CrossFindingRealize.o
 
 # target to build an object file
-DisplayImage.cpp.o:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-.PHONY : DisplayImage.cpp.o
+CrossFindingRealize.cpp.o:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/CrossFindingRealize.cpp.o
+.PHONY : CrossFindingRealize.cpp.o
 
-DisplayImage.i: DisplayImage.cpp.i
+CrossFindingRealize.i: CrossFindingRealize.cpp.i
 
-.PHONY : DisplayImage.i
+.PHONY : CrossFindingRealize.i
 
 # target to preprocess a source file
-DisplayImage.cpp.i:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
-.PHONY : DisplayImage.cpp.i
+CrossFindingRealize.cpp.i:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.i
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/CrossFindingRealize.cpp.i
+.PHONY : CrossFindingRealize.cpp.i
 
-DisplayImage.s: DisplayImage.cpp.s
+CrossFindingRealize.s: CrossFindingRealize.cpp.s
 
-.PHONY : DisplayImage.s
+.PHONY : CrossFindingRealize.s
 
 # target to generate assembly for a file
-DisplayImage.cpp.s:
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
-.PHONY : DisplayImage.cpp.s
+CrossFindingRealize.cpp.s:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.s
+	$(MAKE) -f CMakeFiles/CrossFindingInterface.dir/build.make CMakeFiles/CrossFindingInterface.dir/CrossFindingRealize.cpp.s
+.PHONY : CrossFindingRealize.cpp.s
 
-realize.o: realize.cpp.o
+FocusFindingRealize.o: FocusFindingRealize.cpp.o
 
-.PHONY : realize.o
+.PHONY : FocusFindingRealize.o
 
 # target to build an object file
-realize.cpp.o:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/realize.cpp.o
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/realize.cpp.o
-.PHONY : realize.cpp.o
+FocusFindingRealize.cpp.o:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/FocusFindingRealize.cpp.o
+.PHONY : FocusFindingRealize.cpp.o
 
-realize.i: realize.cpp.i
+FocusFindingRealize.i: FocusFindingRealize.cpp.i
 
-.PHONY : realize.i
+.PHONY : FocusFindingRealize.i
 
 # target to preprocess a source file
-realize.cpp.i:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/realize.cpp.i
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/realize.cpp.i
-.PHONY : realize.cpp.i
+FocusFindingRealize.cpp.i:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.i
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/FocusFindingRealize.cpp.i
+.PHONY : FocusFindingRealize.cpp.i
 
-realize.s: realize.cpp.s
+FocusFindingRealize.s: FocusFindingRealize.cpp.s
 
-.PHONY : realize.s
+.PHONY : FocusFindingRealize.s
 
 # target to generate assembly for a file
-realize.cpp.s:
-	$(MAKE) -f CMakeFiles/interface.dir/build.make CMakeFiles/interface.dir/realize.cpp.s
-	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/realize.cpp.s
-.PHONY : realize.cpp.s
+FocusFindingRealize.cpp.s:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.s
+	$(MAKE) -f CMakeFiles/FocusFindingInterface.dir/build.make CMakeFiles/FocusFindingInterface.dir/FocusFindingRealize.cpp.s
+.PHONY : FocusFindingRealize.cpp.s
+
+ImgManipRealize.o: ImgManipRealize.cpp.o
+
+.PHONY : ImgManipRealize.o
+
+# target to build an object file
+ImgManipRealize.cpp.o:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/ImgManipRealize.cpp.o
+.PHONY : ImgManipRealize.cpp.o
+
+ImgManipRealize.i: ImgManipRealize.cpp.i
+
+.PHONY : ImgManipRealize.i
+
+# target to preprocess a source file
+ImgManipRealize.cpp.i:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.i
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/ImgManipRealize.cpp.i
+.PHONY : ImgManipRealize.cpp.i
+
+ImgManipRealize.s: ImgManipRealize.cpp.s
+
+.PHONY : ImgManipRealize.s
+
+# target to generate assembly for a file
+ImgManipRealize.cpp.s:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.s
+	$(MAKE) -f CMakeFiles/ImgManipInterface.dir/build.make CMakeFiles/ImgManipInterface.dir/ImgManipRealize.cpp.s
+.PHONY : ImgManipRealize.cpp.s
+
+Start.o: Start.cpp.o
+
+.PHONY : Start.o
+
+# target to build an object file
+Start.cpp.o:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/Start.cpp.o
+.PHONY : Start.cpp.o
+
+Start.i: Start.cpp.i
+
+.PHONY : Start.i
+
+# target to preprocess a source file
+Start.cpp.i:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/Start.cpp.i
+.PHONY : Start.cpp.i
+
+Start.s: Start.cpp.s
+
+.PHONY : Start.s
+
+# target to generate assembly for a file
+Start.cpp.s:
+	$(MAKE) -f CMakeFiles/DisplayImage.dir/build.make CMakeFiles/DisplayImage.dir/Start.cpp.s
+.PHONY : Start.cpp.s
 
 # Help Target
 help:
@@ -199,16 +285,24 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... interface"
 	@echo "... DisplayImage"
-	@echo "... DisplayImage.o"
-	@echo "... DisplayImage.i"
-	@echo "... DisplayImage.s"
-	@echo "... realize.o"
-	@echo "... realize.i"
-	@echo "... realize.s"
+	@echo "... rebuild_cache"
+	@echo "... ImgManipInterface"
+	@echo "... edit_cache"
+	@echo "... CrossFindingInterface"
+	@echo "... FocusFindingInterface"
+	@echo "... CrossFindingRealize.o"
+	@echo "... CrossFindingRealize.i"
+	@echo "... CrossFindingRealize.s"
+	@echo "... FocusFindingRealize.o"
+	@echo "... FocusFindingRealize.i"
+	@echo "... FocusFindingRealize.s"
+	@echo "... ImgManipRealize.o"
+	@echo "... ImgManipRealize.i"
+	@echo "... ImgManipRealize.s"
+	@echo "... Start.o"
+	@echo "... Start.i"
+	@echo "... Start.s"
 .PHONY : help
 
 

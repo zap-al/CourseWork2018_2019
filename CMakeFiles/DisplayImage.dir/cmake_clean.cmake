@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o"
-  "CMakeFiles/DisplayImage.dir/realize.cpp.o"
+  "CMakeFiles/DisplayImage.dir/Start.cpp.o"
+  "CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o"
+  "CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o"
+  "CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o"
   "DisplayImage.pdb"
   "DisplayImage"
 )

@@ -4,8 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/meow/working/CW/DisplayImage.cpp" "/home/meow/working/CW/CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o"
-  "/home/meow/working/CW/realize.cpp" "/home/meow/working/CW/CMakeFiles/DisplayImage.dir/realize.cpp.o"
+  "/home/meow/working/CourseWork2018_2019/CrossFindingRealize.cpp" "/home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o"
+  "/home/meow/working/CourseWork2018_2019/FocusFindingRealize.cpp" "/home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o"
+  "/home/meow/working/CourseWork2018_2019/ImgManipRealize.cpp" "/home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o"
+  "/home/meow/working/CourseWork2018_2019/Start.cpp" "/home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir/Start.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +20,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/meow/working/CW/CMakeFiles/interface.dir/DependInfo.cmake"
+  "/home/meow/working/CourseWork2018_2019/CMakeFiles/CrossFindingInterface.dir/DependInfo.cmake"
+  "/home/meow/working/CourseWork2018_2019/CMakeFiles/FocusFindingInterface.dir/DependInfo.cmake"
+  "/home/meow/working/CourseWork2018_2019/CMakeFiles/ImgManipInterface.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

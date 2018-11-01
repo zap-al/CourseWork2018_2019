@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/meow/working/CW/DisplayImage.cpp
-interface.h
-/home/meow/working/CW/interface.h
-
-/home/meow/working/CW/interface.h
+/home/meow/working/CourseWork2018_2019/CrossFindingInterface.h
 iostream
 -
 stdio.h
@@ -26,9 +22,45 @@ chrono
 string
 -
 
-/home/meow/working/CW/realize.cpp
-interface.h
-/home/meow/working/CW/interface.h
+/home/meow/working/CourseWork2018_2019/FocusFindingInterface.h
+iostream
+-
+stdio.h
+-
+iomanip
+-
+opencv2/opencv.hpp
+-
+fstream
+-
+chrono
+-
+string
+-
+
+/home/meow/working/CourseWork2018_2019/ImgManipInterface.h
+iostream
+-
+stdio.h
+-
+iomanip
+-
+opencv2/opencv.hpp
+-
+fstream
+-
+chrono
+-
+string
+-
+
+/home/meow/working/CourseWork2018_2019/Start.cpp
+CrossFindingInterface.h
+/home/meow/working/CourseWork2018_2019/CrossFindingInterface.h
+FocusFindingInterface.h
+/home/meow/working/CourseWork2018_2019/FocusFindingInterface.h
+ImgManipInterface.h
+/home/meow/working/CourseWork2018_2019/ImgManipInterface.h
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
 opencv2/core.hpp

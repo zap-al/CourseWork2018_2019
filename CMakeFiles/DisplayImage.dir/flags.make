@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include/opencv4, -I/home/meow/working/CW/. -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/usr/local/include/opencv4, -I/home/meow/working/CourseWork2018_2019/. -isystem /usr/local/include/opencv4 
 

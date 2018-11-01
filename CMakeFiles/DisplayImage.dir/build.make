@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/meow/working/CW
+CMAKE_SOURCE_DIR = /home/meow/working/CourseWork2018_2019
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/meow/working/CW
+CMAKE_BINARY_DIR = /home/meow/working/CourseWork2018_2019
 
 # Include any dependencies generated for this target.
 include CMakeFiles/DisplayImage.dir/depend.make
@@ -57,42 +57,72 @@ include CMakeFiles/DisplayImage.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/DisplayImage.dir/flags.make
 
-CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
-CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o: DisplayImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o -c /home/meow/working/CW/DisplayImage.cpp
+CMakeFiles/DisplayImage.dir/Start.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
+CMakeFiles/DisplayImage.dir/Start.cpp.o: Start.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/DisplayImage.dir/Start.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/Start.cpp.o -c /home/meow/working/CourseWork2018_2019/Start.cpp
 
-CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CW/DisplayImage.cpp > CMakeFiles/DisplayImage.dir/DisplayImage.cpp.i
+CMakeFiles/DisplayImage.dir/Start.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/Start.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CourseWork2018_2019/Start.cpp > CMakeFiles/DisplayImage.dir/Start.cpp.i
 
-CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CW/DisplayImage.cpp -o CMakeFiles/DisplayImage.dir/DisplayImage.cpp.s
+CMakeFiles/DisplayImage.dir/Start.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/Start.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CourseWork2018_2019/Start.cpp -o CMakeFiles/DisplayImage.dir/Start.cpp.s
 
-CMakeFiles/DisplayImage.dir/realize.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
-CMakeFiles/DisplayImage.dir/realize.cpp.o: realize.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DisplayImage.dir/realize.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/realize.cpp.o -c /home/meow/working/CW/realize.cpp
+CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
+CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o: CrossFindingRealize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o -c /home/meow/working/CourseWork2018_2019/CrossFindingRealize.cpp
 
-CMakeFiles/DisplayImage.dir/realize.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/realize.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CW/realize.cpp > CMakeFiles/DisplayImage.dir/realize.cpp.i
+CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CourseWork2018_2019/CrossFindingRealize.cpp > CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.i
 
-CMakeFiles/DisplayImage.dir/realize.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/realize.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CW/realize.cpp -o CMakeFiles/DisplayImage.dir/realize.cpp.s
+CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CourseWork2018_2019/CrossFindingRealize.cpp -o CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.s
+
+CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
+CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o: FocusFindingRealize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o -c /home/meow/working/CourseWork2018_2019/FocusFindingRealize.cpp
+
+CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CourseWork2018_2019/FocusFindingRealize.cpp > CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.i
+
+CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CourseWork2018_2019/FocusFindingRealize.cpp -o CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.s
+
+CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o: CMakeFiles/DisplayImage.dir/flags.make
+CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o: ImgManipRealize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o -c /home/meow/working/CourseWork2018_2019/ImgManipRealize.cpp
+
+CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/meow/working/CourseWork2018_2019/ImgManipRealize.cpp > CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.i
+
+CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/meow/working/CourseWork2018_2019/ImgManipRealize.cpp -o CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.s
 
 # Object files for target DisplayImage
 DisplayImage_OBJECTS = \
-"CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o" \
-"CMakeFiles/DisplayImage.dir/realize.cpp.o"
+"CMakeFiles/DisplayImage.dir/Start.cpp.o" \
+"CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o" \
+"CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o" \
+"CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o"
 
 # External object files for target DisplayImage
 DisplayImage_EXTERNAL_OBJECTS =
 
-DisplayImage: CMakeFiles/DisplayImage.dir/DisplayImage.cpp.o
-DisplayImage: CMakeFiles/DisplayImage.dir/realize.cpp.o
+DisplayImage: CMakeFiles/DisplayImage.dir/Start.cpp.o
+DisplayImage: CMakeFiles/DisplayImage.dir/CrossFindingRealize.cpp.o
+DisplayImage: CMakeFiles/DisplayImage.dir/FocusFindingRealize.cpp.o
+DisplayImage: CMakeFiles/DisplayImage.dir/ImgManipRealize.cpp.o
 DisplayImage: CMakeFiles/DisplayImage.dir/build.make
 DisplayImage: /usr/local/lib64/libopencv_dnn.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_gapi.so.4.0.0
@@ -102,7 +132,9 @@ DisplayImage: /usr/local/lib64/libopencv_shape.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_stitching.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_superres.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_videostab.so.4.0.0
-DisplayImage: libinterface.a
+DisplayImage: libCrossFindingInterface.a
+DisplayImage: libFocusFindingInterface.a
+DisplayImage: libImgManipInterface.a
 DisplayImage: /usr/local/lib64/libopencv_photo.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_video.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_calib3d.so.4.0.0
@@ -114,7 +146,7 @@ DisplayImage: /usr/local/lib64/libopencv_imgcodecs.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_imgproc.so.4.0.0
 DisplayImage: /usr/local/lib64/libopencv_core.so.4.0.0
 DisplayImage: CMakeFiles/DisplayImage.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/meow/working/CW/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable DisplayImage"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/meow/working/CourseWork2018_2019/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable DisplayImage"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DisplayImage.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +159,6 @@ CMakeFiles/DisplayImage.dir/clean:
 .PHONY : CMakeFiles/DisplayImage.dir/clean
 
 CMakeFiles/DisplayImage.dir/depend:
-	cd /home/meow/working/CW && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meow/working/CW /home/meow/working/CW /home/meow/working/CW /home/meow/working/CW /home/meow/working/CW/CMakeFiles/DisplayImage.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/meow/working/CourseWork2018_2019 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/meow/working/CourseWork2018_2019 /home/meow/working/CourseWork2018_2019 /home/meow/working/CourseWork2018_2019 /home/meow/working/CourseWork2018_2019 /home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/DisplayImage.dir/depend
 

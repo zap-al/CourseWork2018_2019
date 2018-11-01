@@ -1,2 +1,0 @@
-/usr/bin/ar qc libinterface.a  CMakeFiles/interface.dir/realize.cpp.o
-/usr/bin/ranlib libinterface.a
