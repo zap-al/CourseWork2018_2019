@@ -7,39 +7,46 @@ const double artifactMask  [3][3]={{-1, -1, -1},{ -1, 8, -1},{-1, -1, -1}};
 Mat image;
 Mat new_image;
 
-baseVector tryMoveA(){
-    baseVector res;
+baseMove operator - (pointXY a, pointXY b){
+    baseMove res;
+    res.xDist = a.x - b.x;
+    res.yDist = a.y - b.y;
+    return res;
+}
+
+baseMove tryMoveA(){
+    baseMove res;
     pointXY from, to;
     from = findCross();
     //FP_SetAMoveTo(1); допустим сдвинули на 1 такт вверх
     to = findCross();
     //FP_SetAMoveTo(-1); потом вернули обратно
-    res.dist = sqrt((from.x - to.x) * (from.x - to.x) + (from.y - to.y) * (from.y - to.y));
-    res.angle = acos(to.y - from.y) / (to.x - from.x);
+    res.xDist = to.x - from.x;
+    res.yDist = to.y - from.y;
     return res;
 }
 
-baseVector tryMoveB(){
-    baseVector res;
+baseMove tryMoveB(){
+    baseMove res;
     pointXY from, to;
     from = findCross();
     //FP_SetBMoveTo(1); допустим сдвинули на 1 такт вверх
     to = findCross();
     //FP_SetBMoveTo(-1); потом вернули обратно
-    res.dist = sqrt((from.x - to.x) * (from.x - to.x) + (from.y - to.y) * (from.y - to.y));
-    res.angle = acos(to.y - from.y) / (to.x - from.x);
+    res.xDist = to.x - from.x;
+    res.yDist = to.y - from.y;
     return res;
 }
 
-baseVector tryMoveC(){
-    baseVector res;
+baseMove tryMoveC(){
+    baseMove res;
     pointXY from, to;
     from = findCross();
     //FP_SetCMoveTo(1); допустим сдвинули на 1 такт вверх
     to = findCross();
     //FP_SetCMoveTo(-1); потом вернули обратно
-    res.dist = sqrt((from.x - to.x) * (from.x - to.x) + (from.y - to.y) * (from.y - to.y));
-    res.angle = acos(to.y - from.y) / (to.x - from.x);
+    res.xDist = to.x - from.x;
+    res.yDist = to.y - from.y;
     return res;
 }
 

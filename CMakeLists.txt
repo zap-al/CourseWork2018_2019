@@ -21,7 +21,7 @@ add_library(ImgManipInterface STATIC ImgManipRealize.cpp)
 SET(EXECUTABLE_OUTPUT_PATH ./)
 
 
-add_executable( DisplayImage DisplayImage.cpp CrossFindingRealize.cpp FocusFindingRealize.cpp ImgManipRealize.cpp)
+add_executable( DisplayImage Start.cpp CrossFindingRealize.cpp FocusFindingRealize.cpp ImgManipRealize.cpp)
 
 target_link_libraries( DisplayImage ${OpenCV_LIBS})
 target_link_libraries( DisplayImage CrossFindingInterface )
