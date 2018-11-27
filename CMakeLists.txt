@@ -3,7 +3,8 @@ cmake_minimum_required(VERSION 2.8)
 project( DisplayImage )
 
 find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS}, ./ )
+include_directories( ${OpenCV_INCLUDE_DIRS}, ./ , ./Interface )
+source_directory( ./Realization )
 
 SET(HEADER CrossFindingInterface.h)
 SET(SOURCE CrossFindingRealize.cpp)
@@ -26,8 +27,7 @@ add_library(ImgManipInterface STATIC ImgManipRealize.cpp)
 add_library(StructuresInterface STATIC StructuresRealize.cpp)
 add_library(BasisDecompositionInterface STATIC BasisDecompositionRealize.cpp)
 
-SET(EXECUTABLE_OUTPUT_PATH ./)
-
+SET(EXECUTABLE_OUTPUT_PATH ../)
 
 add_executable( DisplayImage Start.cpp CrossFindingRealize.cpp FocusFindingRealize.cpp ImgManipRealize.cpp StructuresRealize.cpp BasisDecompositionRealize.cpp)
 
