@@ -1,28 +1,24 @@
 #include "CrossFindingInterface.h"
-#include "FocusFindingInterface.h"
 #include "ImgManipInterface.h"
+#include "BasisDecompositionInterface.h"
+//#include "FocusFindingInterface.h"
 
 using namespace cv;
+extern Mat image;
+extern Mat new_image;
 
 int main(int argc, char** argv)
 {    
     const int SIZE = 2048;
-    pointXY crossPoint;
+    pointXY dagPoint;
     pointXY centerPoint(SIZE/2, SIZE/2);
-    baseMove a,b;
-    baseMove vectToCenter;
 
     validator(argc, argv[1]);
-
-    a = tryMoveA();
-    b = tryMoveB();
     
-    crossPoint = findCross();
+    dagPoint = findCross();
+
+    BasisDecomposition(dagPoint, centerPoint);
     
-    vectToCenter = crossPoint - centerPoint;
-
-    findFocus(argv[1]);
-
     imageClear();
 
     return 0;

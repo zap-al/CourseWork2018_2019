@@ -7,56 +7,6 @@ const double artifactMask  [3][3]={{-1, -1, -1},{ -1, 8, -1},{-1, -1, -1}};
 Mat image;
 Mat new_image;
 
-baseMove operator - (pointXY a, pointXY b){
-    baseMove res;
-    res.xDist = a.x - b.x;
-    res.yDist = a.y - b.y;
-    return res;
-}
-
-baseMove tryMoveA(){
-    baseMove res;
-    pointXY from, to;
-    from = findCross();
-    //FP_SetAMoveTo(1); допустим сдвинули на 1 такт вверх
-    to = findCross();
-    //FP_SetAMoveTo(-1); потом вернули обратно
-    res.xDist = to.x - from.x;
-    res.yDist = to.y - from.y;
-    return res;
-}
-
-baseMove tryMoveB(){
-    baseMove res;
-    pointXY from, to;
-    from = findCross();
-    //FP_SetBMoveTo(1); допустим сдвинули на 1 такт вверх
-    to = findCross();
-    //FP_SetBMoveTo(-1); потом вернули обратно
-    res.xDist = to.x - from.x;
-    res.yDist = to.y - from.y;
-    return res;
-}
-
-baseMove tryMoveC(){
-    baseMove res;
-    pointXY from, to;
-    from = findCross();
-    //FP_SetCMoveTo(1); допустим сдвинули на 1 такт вверх
-    to = findCross();
-    //FP_SetCMoveTo(-1); потом вернули обратно
-    res.xDist = to.x - from.x;
-    res.yDist = to.y - from.y;
-    return res;
-}
-
-pointXY pointXY::operator = (const pointXY& a){
-    pointXY res;
-    res.x = a.x;
-    res.y = a.y;
-    return res;
-}
-
 double checkForArtefacts(const int _i, const int _j, const double (*_mask)[3], Mat img){
     double sum{0};
     for(int i = 0; i < 3; i++)
@@ -68,7 +18,6 @@ double checkForArtefacts(const int _i, const int _j, const double (*_mask)[3], M
 }
 
 void filtrate(){
-
     double sumHorizontal{0};
     double sumVertical{0};
     for(int i = 0; i < image.rows - 1; i++)
@@ -110,23 +59,25 @@ void imageClear(){
                 new_image.at<uchar>(j,i) = 0;
 }
 
-pointXY findCross(){
+
+pointXY findCross() {
     pointXY res;
     
     filtrate();
    
     int rowOfLine{0};
     rowOfLine = findPos(image.cols, image.rows, rowPos);
-    std:: cout << "Row of line is: " << rowOfLine << std::endl;
 
     int colOfLine{0};
     colOfLine = findPos(image.rows, image.cols, colPos);
-    std:: cout << "Col of line is: " << colOfLine << std::endl;
-    
+
     improseCrossOnInputImage(new_image, rowOfLine, colOfLine);
 
-    res.x = colOfLine;
-    res.y = rowOfLine;
+    res.x = rowOfLine;
+    res.y = colOfLine;
+
+    cout << "Point of cross: " << res.to_string();
+    
     return res;
 }
 

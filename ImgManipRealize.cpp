@@ -28,8 +28,8 @@ void validator(const int _argc, const char* arg){
         printf("usage: DisplayImage.out <Image_Path>\n");
         exit(0);
     }
-    image = imread(arg, IMREAD_GRAYSCALE);
-    new_image = imread(arg, IMREAD_GRAYSCALE);
+    image = imread(arg, IMREAD_REDUCED_GRAYSCALE_2);
+    new_image = imread(arg, IMREAD_REDUCED_GRAYSCALE_2);
 
     if (!image.data)
     {
@@ -37,7 +37,5 @@ void validator(const int _argc, const char* arg){
         exit(0);
     }
     
-    std::cout << "Rows: " << image.rows << std::endl;
-    std::cout << "Cols: " << image.cols << std::endl;
-
+    std::cout << "Image: [ " <<  image.rows << " x " << image.cols << " ] px" << std::endl;
 }
