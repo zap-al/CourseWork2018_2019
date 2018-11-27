@@ -1,6 +1,0 @@
-/home/meow/working/CourseWork2018_2019/CMakeFiles/DisplayImage.dir
-/home/meow/working/CourseWork2018_2019/CMakeFiles/rebuild_cache.dir
-/home/meow/working/CourseWork2018_2019/CMakeFiles/ImgManipInterface.dir
-/home/meow/working/CourseWork2018_2019/CMakeFiles/edit_cache.dir
-/home/meow/working/CourseWork2018_2019/CMakeFiles/CrossFindingInterface.dir
-/home/meow/working/CourseWork2018_2019/CMakeFiles/FocusFindingInterface.dir
