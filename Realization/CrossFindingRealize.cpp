@@ -4,9 +4,6 @@ const double verticalMask  [3][3]={{-1, 2,-1},{-1, 2,-1},{-1, 2,-1}};
 const double horisontalMask[3][3]={{-1,-1,-1},{ 2, 2, 2},{-1,-1,-1}};
 const double artifactMask  [3][3]={{-1, -1, -1},{ -1, 8, -1},{-1, -1, -1}};
 
-Mat image;
-Mat new_image;
-
 double checkForArtefacts(const int _i, const int _j, const double (*_mask)[3], Mat img){
     double sum{0};
     for(int i = 0; i < 3; i++)
@@ -17,7 +14,7 @@ double checkForArtefacts(const int _i, const int _j, const double (*_mask)[3], M
     return abs(sum);
 }
 
-void filtrate(){
+void filtrate(Mat &image, Mat &new_image){
     double sumHorizontal{0};
     double sumVertical{0};
     for(int i = 0; i < image.rows - 1; i++)
@@ -32,7 +29,7 @@ void filtrate(){
             sumVertical = 0;
             for(int k = 0; k < 3; k++)
                 for(int l = 0; l < 3; l++)
-                    sumHorizontal += (image.at<uchar>(i + l,j + k) * horisontalMask[k][l]);
+                    sumHorizontal += (image.at<uchar>(i + l,j + k) * verticalMask[k][l]);
             sumVertical = abs(sumVertical);
 
             if(sumVertical < 30 && sumHorizontal < 30)
@@ -42,46 +39,41 @@ void filtrate(){
     new_image =  cv::Scalar::all(255) - new_image;
 }
 
-void improseCrossOnInputImage(Mat _img, const int _rowOfLine, const int _colOfLine){
-    for(int i = _rowOfLine - 1; i < _rowOfLine + 1; i++)
+void improseCrossOnInputImage(Mat _img, pointXY pCross){
+    for(int i = pCross.x - 1; i < pCross.x + 1; i++)
         for(int j = 0; j < _img.cols; j++)
             _img.at<uchar>(j,i) = 255;
 
-    for(int i = _colOfLine - 1; i < _colOfLine + 1; i++)
+    for(int i = pCross.y - 1; i < pCross.y + 1; i++)
         for(int j = 0; j < _img.cols; j++)
             _img.at<uchar>(i,j) = 255;
 }
 
-void imageClear(){
-    for(int i = 0; i < new_image.rows; i++)
-        for(int j = 0; j < new_image.cols; j++)
-            if(new_image.at<uchar>(j,i) < 255)
-                new_image.at<uchar>(j,i) = 0;
-}
-
-
-pointXY findCross() {
+pointXY findCross(Mat &image) {
     pointXY res;
+    Mat new_image = image.clone();
     
-    filtrate();
+    filtrate(image,new_image);
    
     int rowOfLine{0};
-    rowOfLine = findPos(image.cols, image.rows, rowPos);
+    rowOfLine = findPos(image,new_image, rowPos);
 
     int colOfLine{0};
-    colOfLine = findPos(image.rows, image.cols, colPos);
-
-    improseCrossOnInputImage(new_image, rowOfLine, colOfLine);
+    colOfLine = findPos(image, new_image, colPos);
 
     res.x = rowOfLine;
     res.y = colOfLine;
+
+    improseCrossOnInputImage(new_image, res);
 
     cout << "Point of cross: " << res.to_string();
     
     return res;
 }
 
-int findPos(const int _i, const int _j, int (*f)(int,int)){
+int findPos(Mat &image,Mat &new_image, int (*f)(Mat&,int,int)){
+    int _i = image.cols;
+    int _j = image.rows;
     int maxSum{0};
     int sum{0};
     int res{0};
@@ -91,7 +83,7 @@ int findPos(const int _i, const int _j, int (*f)(int,int)){
 
         for(int j = 1; j < _j - 4; j++)
             for(int k = i; k < i + 2; k++)
-                sum += f(k,j);
+                sum += f(new_image,k,j);
 
         if (sum > maxSum)
         {
@@ -102,10 +94,10 @@ int findPos(const int _i, const int _j, int (*f)(int,int)){
     return res;
 }
 
-int colPos(const int k, const int j){
+int colPos(Mat &new_image, const int k, const int j){
     return new_image.at<uchar>(k,j);
 }
 
-int rowPos(const int k, const int j){
+int rowPos(Mat &new_image, const int k, const int j){
     return new_image.at<uchar>(j,k);
 }

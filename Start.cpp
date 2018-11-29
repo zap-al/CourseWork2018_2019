@@ -2,22 +2,31 @@
 #include "ImgManipInterface.h"
 #include "BasisDecompositionInterface.h"
 #include <fstream>
-//#include "FocusFindingInterface.h"
 
 using namespace cv;
-extern Mat image;
-extern Mat new_image;
 
 int main(int argc, char** argv)
 {    
-    const enum ImreadModes scale = IMREAD_REDUCED_GRAYSCALE_4;
-    const int SIZE = (scale == IMREAD_GRAYSCALE) ? 2048 : (16384 / scale);
-    pointXY pFrom;
-    pointXY pTo(SIZE/2, SIZE/2);
-    
-    validator(argc, argv[1], scale);
+    if (argc != 2) { 
+        cout << "Error: Wrong count of arguments" << endl;
+        return 1;
+    }
+        
+    const enum ImreadModes SCALE = IMREAD_REDUCED_GRAYSCALE_4;
+    Mat image;
+    image = imread(argv[1], SCALE);
 
-    pFrom = findCross();
+    if (!image.data) {
+        cout << "Error: Wrong picture addres" << endl;
+        return 1;
+    }
+
+    std::cout << "Image: [ " <<  image.rows << " x " << image.cols << " ] px" << std::endl;
+
+    pointXY pFrom;
+    pointXY pTo(image.cols / 2., image.rows / 2.);
+
+    pFrom = findCross(image);
     
     ofstream a;
     a.open("/home/meow/CourseWork2018_2019/file.txt");
@@ -26,12 +35,9 @@ int main(int argc, char** argv)
     a.close();
 
     improseCrossOnInputImage(image, pFrom);
+    printToScreen(image);
 
     BasisDecomposition(pFrom, pTo);
-    printToScreen(image);
-    printToScreen(new_image);
     
-    imageClear();
-
     return 0;
 }

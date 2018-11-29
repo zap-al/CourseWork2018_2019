@@ -33,9 +33,6 @@ void BasisDecomposition(pointXY pNow,  pointXY pCenter)
     pointXY pCross;
     pointXY pMove1(30,2);
     pointXY pMove2(2,30);
-    // pNow.x = 0;
-    // pNow.y = 0;
-    // pCenter.x = 
 
     cout << "Move1: " << pMove1.to_string();
     cout << "Move2: " << pMove2.to_string();
